@@ -187,6 +187,7 @@ QuoteLineEditorCtrl.prototype.onUpgradeAssets = function(/*CustomActionModel*/ a
 	var quote = this.editorModel.copyQuote(false);
 	var alc = this.controllerManager.lookup('AssetLookup');
 	alc.load(this.controller, quote, (targetGroupKey == undefined) ? null : targetGroupKey, action.id);
+	console.log(this);
 }
 
 QuoteLineEditorCtrl.prototype.onReconfigureLine = function(/*QuoteLineModel*/ line) {
