@@ -10,7 +10,6 @@
 	<div ng-controller="QuoteLineEditorCtrl" ng-init="editorConfigurationPath='{!$Resource.CKEditorOverlayConfig}'; resources={lbl_edit:'{!$Label.lbl_edit}'}; onLoad('{!quoteId}', '{!objectNames}')" ng-show="active">
 		<c:pageHeader title="{!headerTitle}" subtitle="{!headerSubtitle}" formFactor="{!formFactor}" customTheme="18"/>
 		
-		<c:messages messagesExpr="messages" formFactor="{!formFactor}"/>
 	   		
 	   	<c:status displayExpr="blockingOperationInProgress" formFactor="{!formFactor}"/>
 
