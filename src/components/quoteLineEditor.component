@@ -41,6 +41,8 @@
 			            </table>
 		            </c:pageBlockSection>
 	            </div>
+
+	            <div> helloworld</div>
 	            
 	            <div ng-repeat="group in editorModel.quote.lineItemGroups">
 	           		<c:pageBlockSection title="{{editorModel.quote.grouped ? group.record.Name : editorModel.linesSectionTitle}}" formFactor="{!formFactor}">
