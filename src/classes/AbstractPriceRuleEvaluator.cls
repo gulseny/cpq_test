@@ -19,6 +19,7 @@ public abstract class AbstractPriceRuleEvaluator extends RuleProcessorSupport {
             for (Integer i=0;i<targetObjects.size();i++) {
                 if (isRuleSatisfied(rule, getEvaluatedRecord(i, targetObjects[i]))) {
                     applyRuleActions(ruleRecord.PriceActions__r, i, targetObjects[i]);
+                    
                 }
             }
         }
