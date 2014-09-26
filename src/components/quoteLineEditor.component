@@ -5,7 +5,7 @@
 	<apex:attribute name="objectNames" type="String" description="Names of objects used by this component"/>
 	
 	<apex:stylesheet value="{!$Resource.QuoteEditorCSS}"/>
-	
+	<script type="text/javascript"></script>
 	<script type="text/javascript" src="{!$Resource.QuoteLineEditorUI}"></script>
 	
 	<div ng-controller="QuoteLineEditorCtrl" ng-init="editorConfigurationPath='{!$Resource.CKEditorOverlayConfig}'; resources={lbl_edit:'{!$Label.lbl_edit}'}; onLoad('{!quoteId}', '{!objectNames}')" ng-show="active">
