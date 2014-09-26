@@ -20,6 +20,8 @@
 	            <c:pageBlockHeader formFactor="{!formFactor}">
 	                <c:quoteLineEditorButtons quoteId="{!quoteId}" formFactor="{!formFactor}"/>
 	            </c:pageBlockHeader>
+
+	            <div> hi there! </div>
 	            
 	            <div class="pbBody">
 	            <div ng-show="editorModel.quoteFields.length > 0">
