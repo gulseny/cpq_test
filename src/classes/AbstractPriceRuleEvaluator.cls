@@ -41,7 +41,9 @@ public abstract class AbstractPriceRuleEvaluator extends RuleProcessorSupport {
 	            }
 	            if (condition.FilterVariable__c != null) {
 	            	referencedVariableIds.add(condition.FilterVariable__c);
-	            }
+	            } else {
+                    referencedVariableIds.add(condition.TestedVariable__c);
+                }
 	        }
 	        for (PriceAction__c action : rule.PriceActions__r) {
 	        	if (action.SourceVariable__c != null) {
