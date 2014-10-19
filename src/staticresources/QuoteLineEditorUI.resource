@@ -187,6 +187,7 @@ QuoteLineEditorCtrl.prototype.onUpgradeAssets = function(/*CustomActionModel*/ a
 	var quote = this.editorModel.copyQuote(false);
 	var alc = this.controllerManager.lookup('AssetLookup');
 	alc.load(this.controller, quote, (targetGroupKey == undefined) ? null : targetGroupKey, action.id);
+	console.log(this);
 }
 
 QuoteLineEditorCtrl.prototype.onReconfigureLine = function(/*QuoteLineModel*/ line) {
@@ -247,6 +248,7 @@ QuoteLineEditorCtrl.prototype.addProducts = function(/*Controller*/ srcControlle
 				productLookupCtrl.load(srcController, controller.editorModel.copyQuote(true), targetGroupKey, productLookupCtrl.scope.quoteProcessId, productLookupCtrl.scope.searchModel.actionId);
 			} else {
 				scope.controllerManager.activateController(targetCtrl);
+				console.log('that', this);
 			}
 		} else {
 			// Keep originally selected products to preserve order and stand-alone product selections.
